@@ -7,7 +7,6 @@ export const DarkMode = () => {
         <i className="fa-solid fa-circle-half-stroke"></i>
       </label>
       <input type="checkbox" id="darkMode" />
-      <div className="wrapper" id="Home"></div>
     </div>
   );
 };

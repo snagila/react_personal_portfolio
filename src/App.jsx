@@ -8,18 +8,22 @@ import { MyProjects } from "./Components/MyProjects";
 import { AboutMe } from "./Components/AboutMe";
 import { Contact } from "./Components/Contact";
 import { Footer } from "./Components/Footer";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div class="wrapper" id="Home">
       <DarkMode />
       <NavBar />
-      <HeroSection />
-      <Skills />
-      <Banner />
-      <MyProjects />
-      <AboutMe />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/" element={<Banner />} />
+        <Route path="/Projects" element={<MyProjects />} />
+        <Route path="/About" element={<AboutMe />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+
       <Footer />
 
       <a href="#Home" className="goup">
